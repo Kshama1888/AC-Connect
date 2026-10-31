@@ -1,27 +1,16 @@
-
-# Dependencies
 node_modules/
-
-# Environment variables and secrets
 .env
 .env.*
 !.env.example
 
-# Uploaded personal recordings
 uploads/*
 !uploads/.gitkeep
 
-# Local memory database and data
 data/*
 !data/.gitkeep
 
-# Logs
 *.log
 npm-debug.log*
-
-# Operating system files
 .DS_Store
 Thumbs.db
-
-# Editor settings
 .vscode/
