@@ -1,0 +1,305 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #faf7f0;
+    color: #29251f;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #faf7f0;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #a36b37;
+}
+
+.logo span {
+    color: #29251f;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #514b42;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: #a36b37;
+    color: white;
+    padding: 14px 23px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #79502b;
+    transform: translateY(-2px);
+}
+
+.hero {
+    min-height: 570px;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: linear-gradient(120deg, #f3eadb, #faf7f0);
+}
+
+.hero-content {
+    max-width: 590px;
+}
+
+.eyebrow {
+    color: #a36b37;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.12;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #a36b37;
+}
+
+.hero-description {
+    color: #746b60;
+    line-height: 1.9;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.hero-actions a {
+    color: #79502b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-visual {
+    width: 340px;
+    min-width: 280px;
+}
+
+.memory-card {
+    padding: 40px;
+    background: #44372b;
+    color: white;
+    border-radius: 18px;
+    min-height: 300px;
+    box-shadow: 0 20px 50px #44372b30;
+}
+
+.memory-icon {
+    color: #e6b77c;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.memory-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #e6b77c;
+    margin-bottom: 18px;
+}
+
+.memory-card h2 {
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.memory-card p {
+    color: #d5c9bb;
+    line-height: 1.6;
+}
+
+.memory-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    color: #e6b77c;
+    font-size: 12px;
+}
+
+.intro {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.intro h2,
+.record-section h2 {
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 35px 25px;
+    background: white;
+    border: 1px solid #eee6da;
+    border-radius: 14px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px #44372b12;
+}
+
+.feature-card span {
+    font-size: 32px;
+}
+
+.feature-card h3 {
+    margin: 20px 0 12px;
+}
+
+.feature-card p {
+    color: #746b60;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.record-section {
+    background: #44372b;
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.record-section h2 {
+    margin-bottom: 15px;
+}
+
+.record-section > p:not(.eyebrow) {
+    color: #d5c9bb;
+    margin-bottom: 25px;
+}
+
+#record-status {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 35px 8%;
+    text-align: center;
+    line-height: 2;
+    color: #746b60;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 65px 7%;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.recorder {
+    max-width: 550px;
+    margin: 35px auto 0;
+    padding: 35px;
+    background: #574536;
+    border: 1px solid #80694f;
+    border-radius: 18px;
+}
+
+.record-circle {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.recorder h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.record-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+#stop-btn {
+    background: #8c4238;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#audio-playback {
+    width: 100%;
+    margin-top: 25px;
+}
+
+#download-btn {
+    margin-top: 20px;
+}

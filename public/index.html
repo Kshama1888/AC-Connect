@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AC Connect | Stories That Never Fade</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">AC <span>Connect.</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#memories">Memories</a>
+            <a href="#record">Record a Story</a>
+        </nav>
+
+        <button class="nav-button" onclick="scrollToRecord()">
+            Preserve a Memory
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">EVERY STORY DESERVES TO LIVE FOREVER</p>
+
+                <h1>
+                    Some voices fade.<br>
+                    <span>Their stories shouldn't.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Preserve the voices, memories, traditions and
+                    experiences of the people who make your life special.
+                    Let their stories travel across generations.
+                </p>
+
+                <div class="hero-actions">
+                    <button onclick="scrollToRecord()">
+                        Start Preserving →
+                    </button>
+
+                    <a href="#memories">Explore Memories</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="memory-card">
+                    <div class="memory-icon">✦</div>
+                    <p class="memory-label">A MEMORY TO KEEP</p>
+                    <h2>Stories connect generations.</h2>
+                    <p>Yesterday's memories. Tomorrow's treasures.</p>
+                    <div class="memory-footer">
+                        <span>AC CONNECT</span>
+                        <span>♥</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="intro" id="memories">
+            <p class="eyebrow">MORE THAN JUST MEMORIES</p>
+            <h2>Keep the moments that matter.</h2>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <span>🎙️</span>
+                    <h3>Preserve Voices</h3>
+                    <p>Record the stories and experiences of your loved ones.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span>✍️</span>
+                    <h3>Understand Stories</h3>
+                    <p>Turn conversations into meaningful written memories with AI.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span>🌼</span>
+                    <h3>Protect Heritage</h3>
+                    <p>Keep family traditions, recipes and cultural knowledge alive.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="record-section" id="record">
+            <p class="eyebrow">YOUR STORY MATTERS</p>
+            <h2>Every memory begins with a voice.</h2>
+            <p>Ready to preserve a story?</p>
+
+            
+<div class="recorder">
+    <div class="record-circle">🎙️</div>
+
+    <h3>Capture a precious memory</h3>
+
+    <p>Every voice holds a story worth preserving.</p>
+
+    <div class="record-controls">
+        <button id="record-btn" onclick="startRecording()">
+            Start Recording
+        </button>
+
+        <button id="stop-btn" onclick="stopRecording()" disabled>
+            Stop Recording
+        </button>
+    </div>
+
+    <p id="record-status" aria-live="polite">
+        Your microphone is ready.
+    </p>
+
+    <audio id="audio-playback" controls hidden></audio>
+
+    <button id="download-btn" onclick="downloadRecording()" hidden>
+        Download Recording
+    </button>
+</div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">AC <span>Connect.</span></div>
+        <p>Preserving yesterday. Connecting tomorrow.</p>
+        <p>© 2026 AC Connect</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
